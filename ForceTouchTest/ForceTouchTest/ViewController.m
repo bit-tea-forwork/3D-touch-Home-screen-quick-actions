@@ -18,9 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    //
     [[BTForceTouch sharedInstance] initWithTitleArray:@[@"11111",@"22222",@"22222"] subTitleArray:@[@"11111",@"22222",@"22222"] iconArray:@[@"Employee-plan_btn_se",@"Employee-plan_btn_se",@"Employee-plan_btn_se"]];
     [BTForceTouch sharedInstance].performedIndex = ^(NSInteger index) {
+        //add some test hint
+        //vim edit .pro
         if (index == 0) {
             self.view.backgroundColor = [UIColor yellowColor];
         }else{
